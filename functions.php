@@ -115,8 +115,8 @@ function atlantis_scripts() {
 
 	wp_enqueue_style( 'atlantis-style', get_stylesheet_uri() );
 
-	wp_register_script('popper', 
-	) 'https://unpkg.com/@popperjs/core@2.0.6/dist/umd/popper.js', false, '' , true);
+	wp_register_script('popper',
+	'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js', false, '', true);
 
 	wp_enqueue_script('popper');
 
@@ -159,6 +159,16 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Widgets File.
+ */
+require get_template_directory() . '/inc/widgets.php';
+
+/**
+ * Bootstrap Navwalker File.
+ */
+require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
 
 /**
  * Load Jetpack compatibility file.
