@@ -64,6 +64,8 @@
 	]);
 	?>
 	</nav>
-</header><!-- #masthead -->
+
+<?php the_custom_header_markup(); ?> 
+	</header><!-- #masthead -->
 
 <div id="content" class="site-content row">
