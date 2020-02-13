@@ -107,8 +107,8 @@ add_action( 'after_setup_theme', 'atlantis_content_width', 0 );
  * Enqueue scripts and styles.
  */
 function atlantis_scripts() {
-	wp_enqueue_style( 'atlantis-bs-css', get_template_directory_uri() .
-	'/dist/css/bootstrap.min.css' );
+	wp_enqueue_style( 'atlantis-yeti-css', get_template_directory_uri() .
+	'/dist/css/yeti.css' );
 
 	wp_enqueue_style( 'atlantis-fontawesome', get_template_directory_uri() .
 	'/fonts/font-awesome/css/fontawesome.min.css' );
