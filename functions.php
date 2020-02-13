@@ -84,7 +84,7 @@ endif;
 add_action( 'after_setup_theme', 'atlantis_setup' );
 
 function atlantis_add_editor_style() {
-	atlantis_add_editor_style('dist/css/editor-style.css');
+		add_editor_style('dist/css/editor-style.css');
 }
 add_action('admin_init', 'atlantis_add_editor_style');
 
